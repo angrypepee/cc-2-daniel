@@ -1,59 +1,70 @@
+// pages/index.js
 import React from 'react';
-    const Testimonial = () => {
-        const testimonialsData = [
-          {
-            quote: "The freshest fish I've ever received! The quality is exceptional, and their delivery is always on time.",
-            author: "Emma R., Home Chef"
-          },
-          {
-            quote: "Running a restaurant requires consistent, high-quality ingredients, and [Your Company Name] never disappoints.",
-            author: "Michael T., Restaurant Owner"
-          },
-          {
-            quote: "I was impressed with the variety of fish and frozen products available. The service was seamless.",
-            author: "Sophia L., Busy Parent"
-          }
-        ];
-      
-        return (
-          <div className="testimonial-container">
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+// Testimonial component with slider effect
+const Testimonial = () => {
+    const testimonialsData = [
+        {
+        quote: "The freshest fish I've ever received! The quality is exceptional, and their delivery is always on time.",
+        author: "Emma R., Home Chef"
+        },
+        {
+        quote: "Running a restaurant requires consistent, high-quality ingredients, and [Your Company Name] never disappoints.",
+        author: "Michael T., Restaurant Owner"
+        },
+        {
+        quote: "I was impressed with the variety of fish and frozen products available. The service was seamless.",
+        author: "Sophia L., Busy Parent"
+        }
+    ];
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        arrows: true
+    };
+
+    return (
+        <div className="testimonial-slider-container">
+        <Slider {...settings}>
             {testimonialsData.map((testimonial, index) => (
-              <div key={index} className="testimonial">
+            <div key={index} className="testimonial">
                 <p className="testimonial-quote">"{testimonial.quote}"</p>
                 <p className="testimonial-author">— {testimonial.author}</p>
-              </div>
+            </div>
             ))}
-            <style jsx>{`
-              .testimonial-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                padding: 20px;
-                background-color: #f7f9fc;
-                border-radius: 10px;
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-              }
-              .testimonial {
-                max-width: 600px;
-                padding: 20px;
-                background-color: #ffffff;
-                border-radius: 8px;
-                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-                text-align: center;
-              }
-              .testimonial-quote {
-                font-style: italic;
-                color: #333;
-                margin-bottom: 10px;
-              }
-              .testimonial-author {
-                font-weight: bold;
-                color: #555;
-              }
-            `}</style>
-          </div>
-        );
-      };
+        </Slider>
+        <style jsx>{`
+            .testimonial-slider-container {
+            margin: 0 auto;
+            padding: 20px;
+            }
+            .testimonial {
+            text-align: center;
+            padding: 20px;
+            }
+            .testimonial-quote {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 10px;
+            }
+            .testimonial-author {
+            font-weight: bold;
+            color: #555;
+            }
+        `}</style>
+        </div>
+    );
+};
+
 
 export default Testimonial;
