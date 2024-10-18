@@ -26,4 +26,13 @@ body {
   }
 }
 
+nav {
+  backdrop-filter: blur(1px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); 
+}
+
+/* Optionally, add transition effect for smoother background change */
+.nav-transition {
+  transition: background-color 0.3s ease;
+}
 
