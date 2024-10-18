@@ -37,30 +37,30 @@ function TeamsView() {
                                     {/* konten kiri */}
                                     <GridItem rowSpan={2} colSpan={2} >
                                         <div className='content-normal justify-start p-2'>
-                                            <p className='mb-2'>Our Journey</p>
+                                            <p className='mb-2'>Meet our Experts</p>
                                             <h1 className="text-gray text-6xl font-extrabold">
-                                                Fresh Seafood, Frozen Delights – Delivered!
+                                            United by Passion, Driven by Excellence
                                             </h1>
                                         </div>
                                     </GridItem>
 
                                     {/* konten Kanan */}
                                     <GridItem rowSpan={3} colSpan={3}>
-                                        <GridItem colSpan={3} className="pb-2">
+                                        <GridItem colSpan={3} className="pb-10">
                                             <p>
-                                                At 9 Duck, we are committed to delivering the freshest seafood and premium frozen food directly to your doorstep. With years of experience in sourcing and handling quality products, we pride ourselves on providing nutritious and sustainable food options that meet your culinary needs. Our mission is to make seafood and frozen delights accessible, convenient, and affordable for everyone.
+                                            Our diverse team is composed of individuals who share a common vision: to make fresh seafood and premium frozen delights accessible to everyone. Each team member brings a unique skill set, from sourcing and logistics to customer service, ensuring that we operate smoothly and effectively.
                                             </p>
                                         </GridItem>
                                         
                                         <GridItem colSpan={3} className="pb-3">
                                             <Grid templateColumns='repeat(2, 1fr)' gap={2}>
-                                                <GridItem w='100%' h='10'>
-                                                    <h6 className="text-black text-base font-bold">Vision</h6>
-                                                    <p>To be the leading provider of sustainable and high-quality seafood and frozen food products for everyone</p>
+                                                <GridItem w='100%'>
+                                                    <h6 className="text-black text-base font-bold">Sourcing Specialists</h6>
+                                                    <p>We understand the importance of timely delivery. Our logistics team ensures that your orders are handled with care and delivered promptly.</p>
                                                 </GridItem>
 
-                                                <GridItem w='100%' h='10'>
-                                                    <h6 className="text-black text-base font-bold">Mision</h6>
+                                                <GridItem w='100%'>
+                                                    <h6 className="text-black text-base font-bold">Logistics Experts</h6>
                                                     <p>To provide fresh, responsibly sourced seafood and top-tier with unmatched quality and convenience.</p>
                                                 </GridItem>
 
@@ -84,7 +84,6 @@ function TeamsView() {
                 <section>
                     <div>
                         <FetchUserData />
-                        <Cta />
                     </div>
                 </section>
             </div>

@@ -1,56 +1,55 @@
 import React from 'react';
 import background from "../public/banner.png";
-import salmon from "../public/salmon.webp"; 
+import nineDuck from "../public/9duck.jpg"; 
 
-// Sample product data
 const products = [
     {
         id: 1,
-        title: "Salmon Fillet",
-        description: "Fresh and delicious salmon fillet.",
-        image: salmon.src, 
+        title: "9 Duck Fillet",
+        description: "Fresh and delicious 9 Duck fillet.",
+        image: nineDuck.src, 
     },
     {
         id: 2,
         title: "Tuna Steak",
         description: "High-quality tuna steak.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 3,
         title: "Shrimp",
         description: "Juicy shrimp for your seafood recipes.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 4,
         title: "Crab Legs",
         description: "Sweet and succulent crab legs.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 5,
         title: "Mahi Mahi",
         description: "Fresh mahi mahi for grilling.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 6,
         title: "Lobster",
         description: "Premium lobster for special occasions.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 7,
         title: "Cod Fillet",
         description: "Mild and flaky cod fillet.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
     {
         id: 8,
         title: "Sardines",
         description: "Healthy sardines packed in oil.",
-        image: salmon.src, 
+        image: nineDuck.src, 
     },
 ];
 
@@ -74,17 +73,17 @@ function ProductsView() {
             </section>
 
             {/* Product Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 pt-20 container mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 pt-20 pb-20 container mx-auto">
                 {products.map(product => (
-                    <div key={product.id} className="border rounded-lg shadow-lg overflow-hidden">
-                        {/* Set height and width to be equal for square images */}
+                    <div key={product.id} className="border rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
+                        {/* Center image and add margin-top */}
                         <img 
                             src={product.image} 
                             alt={product.title} 
-                            className="w-full h-48 object-cover"
-                            style={{ height: '250px', width: '250px', objectFit: 'cover' }} // Fixed height and width for square
+                            className="object-cover mt-4"
+                            style={{ height: '250px', width: '250px', objectFit: 'cover' }} 
                         />
-                        <div className="p-4">
+                        <div className="p-4 text-center">
                             <h2 className="text-xl font-semibold">{product.title}</h2>
                             <p className="mt-2 text-gray-600">{product.description}</p>
                         </div>
