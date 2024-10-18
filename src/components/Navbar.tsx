@@ -1,8 +1,8 @@
-// components/Navbar.js
 import { NAV_LINKS } from "@/constants";
-import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/9duck-text.png";
+import { Link } from '@chakra-ui/react'
+
 
 const Navbar = () => {
     return (
