@@ -35,6 +35,9 @@ const Testimonial = () => {
 
     return (
         <div className="testimonial-slider-container">
+
+        <h6 className="text-black text-2xl font-bold text-center">What our customers say</h6>
+        <h6 className="text-black text-sm text-center">______________</h6>
         <Slider {...settings}>
             {testimonialsData.map((testimonial, index) => (
             <div key={index} className="testimonial">
@@ -45,7 +48,7 @@ const Testimonial = () => {
         </Slider>
         <style jsx>{`
             .testimonial-slider-container {
-            margin: 0 auto;
+            margin: 20px;
             padding: 20px;
             }
             .testimonial {

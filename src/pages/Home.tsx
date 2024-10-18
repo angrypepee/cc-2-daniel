@@ -12,9 +12,8 @@ function HomeView() {
         <div>
             <Hero />
             <KnowUs />
-            <Cta/>
+            {/* <Cta/> */}
             <Testimonial />
-            
         </div>
     )
 }
