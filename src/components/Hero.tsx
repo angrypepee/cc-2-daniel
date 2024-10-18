@@ -1,19 +1,24 @@
 import Image from "next/image";
 import { Button, ButtonGroup } from '@chakra-ui/react'
+import background from "../public/bg-fishing-1.jpg"
 
 const Hero = () => {
     return(
-        <section className="bg-orange-300 h-screen content-center">
+        <section className=" h-screen content-end py-7" 
+            style={{   backgroundImage: `url(${background.src})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: 'no-repeat',
+                        }}>
             <div className="grid grid-cols-3 gap-4 container mx-auto mb-3">
                     <div className="col-span-2">
                         <h1 className="text-white text-7xl font-extrabold">
-                            Crafting every single pixels with detailed
+                            From Ocean to Freezer, Quality You Can Taste!
                         </h1>
-                        <p className="text-white mb-10">
-                            We will help to develop every smallest thing into a big one for your company
+                        <p className="text-white mb-5">
+                            Whether you're a seafood enthusiast or running a restaurant
                         </p>
 
-                        <Button colorScheme='orange'>Let Do it</Button>
+                        <Button colorScheme='orange' padding='10px 50px'>OUR PRODUCTS</Button>
 
                     </div>
                     <div></div>
