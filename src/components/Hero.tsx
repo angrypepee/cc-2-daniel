@@ -18,7 +18,7 @@ const Hero = () => {
                         <p className="text-white mb-5">
                             Whether you're a seafood enthusiast or running a restaurant
                         </p>
-                        <Link href="/Services" passHref>
+                        <Link href="/Products" passHref>
                         <Button colorScheme='orange' padding='10px 50px'>OUR PRODUCTS</Button>
                         </Link>
                     </div>
