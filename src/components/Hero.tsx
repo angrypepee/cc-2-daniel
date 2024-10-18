@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import background from "../public/bg-fishing-1.jpg"
+import Link from "next/link";
 
 const Hero = () => {
     return(
@@ -17,9 +18,9 @@ const Hero = () => {
                         <p className="text-white mb-5">
                             Whether you're a seafood enthusiast or running a restaurant
                         </p>
-
+                        <Link href="/Services" passHref>
                         <Button colorScheme='orange' padding='10px 50px'>OUR PRODUCTS</Button>
-
+                        </Link>
                     </div>
                     <div></div>
                     <div></div>

@@ -2,7 +2,6 @@ import { Grid, GridItem } from '@chakra-ui/react'
 import React from 'react'
 import Logo from "../public/9duck.png"
 import background from "../public/banner-1.png"
-import { section } from 'framer-motion/client'
 import Link from 'next/link'
 import FetchUserData from './FetchUserData'
 
@@ -83,7 +82,7 @@ function KnowUs() {
                                 <p>
                                     We offer a wide variety of fresh fish, sourced daily from trusted suppliers. Whether you're a seafood enthusiast or running a restaurant, our reliable delivery service ensures that you get the best-quality fish straight to your door, ready to be cooked or stored.
                                 </p>
-                                <Link href="/" className="font-bold">Learn More {'>'}</Link>
+                                <Link href="/Products" className="font-bold">Learn More {'>'}</Link>
                             </div>
                         </div>
                     </GridItem>
@@ -96,7 +95,7 @@ function KnowUs() {
                                 Our selection of frozen food products includes everything from frozen vegetables to pre-prepared meals and seafood. We focus on quality preservation, ensuring that all our frozen goods retain their flavor, freshness, and nutritional value.
                                 </p>
 
-                                <Link href="/" className="font-bold">Learn More {'>'}</Link>
+                                <Link href="/Products" className="font-bold">Learn More {'>'}</Link>
                             </div>
                         </div>
                     </GridItem>
